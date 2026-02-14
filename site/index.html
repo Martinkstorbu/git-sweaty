@@ -695,15 +695,15 @@
       }
 
       .more-stats {
-        --axis-gap: 8px;
+        --axis-gap: var(--space-3);
         --label-row-height: var(--heatmap-label-row-height);
-        --label-gap: 0px;
+        --label-gap: var(--space-0);
         --label-gap-rotated: 10px;
         position: relative;
         display: grid;
         grid-template-columns: var(--card-graph-rail-width) max-content;
         column-gap: var(--stats-column-gap);
-        row-gap: 0;
+        row-gap: var(--labeled-card-title-gap);
         align-items: center;
         justify-content: start;
       }
@@ -899,7 +899,7 @@
       .more-stats.more-stats-stacked {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        row-gap: 0;
+        row-gap: var(--labeled-card-title-gap);
       }
 
       .more-stats.more-stats-stacked .more-stats-body {
@@ -915,7 +915,7 @@
         grid-row: 3;
         gap: var(--side-stat-gap);
         margin-left: calc(var(--axis-width) + var(--axis-gap));
-        margin-top: var(--space-5);
+        margin-top: calc(var(--space-5) - var(--labeled-card-title-gap));
         align-self: start;
         justify-self: start;
         justify-content: flex-start;
@@ -928,7 +928,7 @@
       .more-stats.more-stats-stacked > .labeled-card-title {
         display: flex;
         align-items: center;
-        column-gap: 10px;
+        column-gap: var(--space-4);
       }
 
       .more-stats.more-stats-stacked > .labeled-card-title .more-stats-metric-chips {
