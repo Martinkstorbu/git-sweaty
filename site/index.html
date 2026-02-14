@@ -1230,11 +1230,12 @@
         }
 
         header {
-          padding: 18px 24px 16px;
+          --desktop-header-stack-gap: 4px;
+          padding: 18px 24px var(--desktop-header-stack-gap);
         }
 
         .header-top {
-          row-gap: 4px;
+          row-gap: var(--desktop-header-stack-gap);
         }
 
         .button-row {
