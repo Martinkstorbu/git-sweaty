@@ -169,7 +169,6 @@ function getElementContentWidth(element) {
 
 function alignFrequencyMetricChipsToSecondGraphAxis(frequencyCard, title, metricChipRow) {
   metricChipRow.style.removeProperty("margin-left");
-  if (isNarrowLayoutViewport()) return;
   const secondGraphYearLabel = frequencyCard.querySelector(
     ".more-stats-grid > .more-stats-col[data-chip-axis-anchor=\"true\"] .axis-day-col .axis-y-label",
   );

@@ -69,11 +69,9 @@
           fixed;
         min-height: 100vh;
         padding: 40px 20px;
-        overflow-x: hidden;
       }
 
       .app {
-        width: 100%;
         max-width: 1240px;
         margin: 0 auto;
         display: grid;
@@ -373,7 +371,6 @@
         align-items: center;
         justify-items: center; /* prevents full-width stretch that moves the dot left */
         width: 100%;
-        min-width: 0;
       }
 
       .summary-card-action {
@@ -415,7 +412,6 @@
         text-transform: uppercase;
         letter-spacing: 0.08em;
         margin-bottom: 6px;
-        overflow-wrap: anywhere;
       }
 
       .summary-value {
@@ -457,7 +453,6 @@
       .type-header {
         font-size: 18px;
         font-weight: 600;
-        overflow-wrap: anywhere;
       }
 
       .type-list {
@@ -471,7 +466,6 @@
 
       .labeled-card-title {
         color: var(--text);
-        overflow-wrap: anywhere;
       }
 
       .card {
@@ -871,16 +865,11 @@
       .more-stats.more-stats-stacked > .labeled-card-title {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         column-gap: 10px;
-        row-gap: 6px;
-        min-width: 0;
       }
 
       .more-stats.more-stats-stacked > .labeled-card-title .more-stats-metric-chips {
         position: static;
-        min-width: 0;
-        max-width: 100%;
       }
 
       .more-stats.more-stats-stacked .more-stats-fact-grid {
