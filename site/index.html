@@ -902,6 +902,10 @@
         row-gap: var(--labeled-card-title-gap);
       }
 
+      .more-stats.more-stats-stacked.card-with-labeled-title {
+        padding-top: var(--space-3);
+      }
+
       .more-stats.more-stats-stacked .more-stats-body {
         grid-column: 1;
         grid-row: 2;
@@ -933,6 +937,12 @@
 
       .more-stats.more-stats-stacked > .labeled-card-title .more-stats-metric-chips {
         position: static;
+      }
+
+      .more-stats.more-stats-stacked .more-stats-metric-chip {
+        min-height: 22px;
+        padding: calc(var(--space-1) / 2) var(--space-3);
+        font-size: 9px;
       }
 
       .more-stats.more-stats-stacked .more-stats-fact-grid {
